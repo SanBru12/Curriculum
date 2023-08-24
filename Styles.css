@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.ImageProfile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 100px;
+}
+
+.Colum{
+
+    margin-left: 75px; 
+    
+    height: 100%;
+    width: 300px;
+    background-color: #5B8F8F;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    position: fixed;
+
+}
+
+.Colum image{
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.Profile{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.Text{
+    margin-top: 75px;
+    padding-left: 400px;
+    height: 250px;
+    width: 100%;
+    background-color: #EBC9BB;
+}
+
+.Name{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.Rol{
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: gray;
+}
+
+
+
+.About-Me{
+    padding-top: 50px;
+    padding-left: 25px;
+
+}
+.Description{
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    initial-value: 80;
+    initial-letter: 1.6;
+}
