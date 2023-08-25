@@ -61,13 +61,12 @@ body{
     color: gray;
 }
 
-
-
 .About-Me{
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 25px;
-
+    padding-right: 10px;
 }
+
 .Description{
     font-family: 'Lora', sans-serif;
     font-weight: 400;
@@ -75,4 +74,50 @@ body{
     color: white;
     initial-value: 80;
     initial-letter: 1.6;
+    text-decoration: none;
+}
+
+.Description-Pading{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.IconoTop{
+ margin-top: 15px;
+
+}
+
+.Info{
+    padding-top: 25px;
+    padding-left: 420px;
+    padding-right: 10px;
+
+    font-family: 'Lora', sans-serif;
+}
+.Title{
+    padding-left: 0px;
+    padding-bottom: 20px;
+
+    font-weight: 700;
+}
+.Grey{
+    color: gray;
+    font-weight: 400;
+
+    margin: 0px;
+}
+
+.SubTitle{
+    font-weight: 500;
+}
+
+.icons{
+    width: 32px;
+    height: 32px;
+}
+
+.Flex-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
