@@ -1,123 +1,181 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.ImageProfile{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-top: 100px;
+.ImageProfile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 10px;
 }
 
-.Colum{
+.Colum {
+  /* margin-left: 75px;  */
 
-    margin-left: 75px; 
-    
-    height: 100%;
-    width: 300px;
-    background-color: #5B8F8F;
-   
+  height: 100%;
+  width: 300px;
+  background-color: #5b8f8f;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  position: fixed;
+}
+
+.Colum image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.Text {
+  /* margin-top: 75px; */
+
+  padding-left: 400px;
+  height: 120px;
+  width: 100%;
+  background-color: #ebc9bb;
+}
+
+.Name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Rol {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.About-Me {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.Description {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  initial-value: 80;
+  initial-letter: 1.6;
+  text-decoration: none;
+}
+
+.Description-Pading {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.IconoTop {
+  margin-top: 15px;
+}
+
+.Info {
+  padding-top: 25px;
+  padding-left: 340px;
+  padding-right: 10px;
+
+  font-family: "Lora", sans-serif;
+}
+.Title {
+  padding-left: 0px;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+}
+.Grey {
+  color: gray;
+  font-weight: 400;
+
+  margin: 0px;
+}
+
+.SubTitle {
+  font-weight: 500;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+.Flex-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.container {
+  max-height: 540px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura */
+}
+
+.Name2 {
+  display: none;
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  initial-value: 80;
+  initial-letter: 1.6;
+  text-align: start;
+}
+.Rol2 {
+  display: none;
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  initial-value: 80;
+  initial-letter: 1.6;
+  text-align: start;
+}
+@media (max-width: 1100px) {
+  .Text {
+    display: none;
+  }
+
+  .container {
+    max-height: 700px; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura */
+  }
+  .Name2 {
+    display: block;
+  }
+  .Rol2 {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .Info {
+    padding-left: 20px;
+  }
+  .container {
+    overflow-y: auto;
+    margin-bottom: 40px;
+  }
+  .Colum {
+    position: relative;
+    width: 100%;
+  }
+
+  .ContainerMain {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-
-    position: fixed;
-
-}
-
-.Colum image{
-    max-width: 100%;
-    max-height: 100%; 
-}
-
-.Profile{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.Text{
-    margin-top: 75px;
-    padding-left: 400px;
-    height: 250px;
-    width: 100%;
-    background-color: #EBC9BB;
-}
-
-.Name{
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.Rol{
-    font-family: 'Lora', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    font-style: italic;
-    color: gray;
-}
-
-.About-Me{
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 10px;
-}
-
-.Description{
-    font-family: 'Lora', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: white;
-    initial-value: 80;
-    initial-letter: 1.6;
-    text-decoration: none;
-}
-
-.Description-Pading{
-    padding-left: 15px;
-    padding-bottom: 15px;
-}
-.IconoTop{
- margin-top: 15px;
-
-}
-
-.Info{
-    padding-top: 25px;
-    padding-left: 420px;
-    padding-right: 10px;
-
-    font-family: 'Lora', sans-serif;
-}
-.Title{
-    padding-left: 0px;
-    padding-bottom: 20px;
-
-    font-weight: 700;
-}
-.Grey{
-    color: gray;
-    font-weight: 400;
-
-    margin: 0px;
-}
-
-.SubTitle{
-    font-weight: 500;
-}
-
-.icons{
-    width: 32px;
-    height: 32px;
-}
-
-.Flex-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
+  }
 }
