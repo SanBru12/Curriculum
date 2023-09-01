@@ -147,7 +147,8 @@ a.download-link {
   text-decoration: none; 
   border-radius: 5px; 
   font-weight: bold; 
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
+  margin-bottom: 50px; 
 }
 
 a.download-link:hover {
