@@ -7,7 +7,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 2px solid white;
   margin-top: 10px;
 }
 
@@ -117,10 +117,6 @@ body {
   gap: 10px;
   align-items: center;
 }
-.container {
-  max-height: 540px; /* Altura máxima del contenedor */
-  overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura */
-}
 
 .Name2 {
   display: none;
@@ -147,10 +143,6 @@ body {
     display: none;
   }
 
-  .container {
-    max-height: 700px; /* Altura máxima del contenedor */
-    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido excede la altura */
-  }
   .Name2 {
     display: block;
   }
@@ -163,10 +155,7 @@ body {
   .Info {
     padding-left: 20px;
   }
-  .container {
-    overflow-y: auto;
-    margin-bottom: 40px;
-  }
+  
   .Colum {
     position: relative;
     width: 100%;
