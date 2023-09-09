@@ -2,21 +2,27 @@ body {
   margin: 0;
   padding: 0;
 }
+.img{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .ImageProfile {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 2px solid white;
-  margin-top: 10px;
+  margin: auto;
+
 }
 
-.Colum {
+.Content {
   /* margin-left: 75px;  */
 
   height: 100%;
   width: 300px;
-  background-color: #5b8f8f;
+  background-color: #004AAD;
 
   display: flex;
   flex-direction: column;
@@ -26,6 +32,7 @@ body {
   position: fixed;
 }
 
+
 .Colum image {
   max-width: 100%;
   max-height: 100%;
@@ -34,36 +41,12 @@ body {
 .Profile {
   display: flex;
   flex-direction: row;
+  justify-content: start;
 }
 
-.Text {
-  /* margin-top: 75px; */
-
-  padding-left: 400px;
-  height: 120px;
-  width: 100%;
-  background-color: #ebc9bb;
-}
-
-.Name {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.Rol {
-  font-family: "Lora", sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: gray;
-}
 
 .About-Me {
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 10px;
+  text-align: center;
 }
 
 .Description {
@@ -74,32 +57,31 @@ body {
   initial-value: 80;
   initial-letter: 1.6;
   text-decoration: none;
+  
 }
 
 .Description-Pading {
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .IconoTop {
   margin-top: 15px;
 }
 
 .Info {
-  padding-top: 25px;
-  padding-left: 340px;
-  padding-right: 10px;
-
+  padding-left: 60px;
+  margin-left: 110px;
   font-family: "Lora", sans-serif;
 }
+
 .Title {
   padding-left: 0px;
   font-weight: 700;
 }
+
 .Grey {
   color: gray;
   font-weight: 400;
-
-  margin: 0px;
 }
 
 .SubTitle {
@@ -118,8 +100,7 @@ body {
   align-items: center;
 }
 
-.Name2 {
-  display: none;
+.Name {
   font-family: "Lora", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
@@ -128,8 +109,8 @@ body {
   initial-letter: 1.6;
   text-align: start;
 }
-.Rol2 {
-  display: none;
+
+.Rol {
   font-family: "Lora", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -141,45 +122,42 @@ body {
 
 a.download-link {
   display: inline-block;
-  background-color: #ebc9bb; 
+  background-color: #fff; 
   color: #000; 
   padding: 10px 20px; 
   text-decoration: none; 
   border-radius: 5px; 
   font-weight: bold; 
   transition: background-color 0.3s;
-  margin-bottom: 10px; 
+  margin: 20px 20px 0px 0px; 
 }
 
 a.download-link:hover {
-  background-color: #fff; 
+  background-color: #38B6FF; 
 }
 
-@media (max-width: 1100px) {
-  .Text {
-    display: none;
-  }
 
-  .Name2 {
-    display: block;
-  }
-  .Rol2 {
-    display: block;
-  }
-}
+
+
+
 
 @media (max-width: 500px) {
   .Info {
-    padding-left: 20px;
+    margin-left: 0;
+    padding-left: 10px;
   }
   
-  .Colum {
-    position: relative;
+  .Content {
+    position:unset;
     width: 100%;
+    
   }
 
-  .ContainerMain {
-    display: flex;
+  .Profile{
     flex-direction: column;
+  }
+
+  .Name{
+    text-align: center;
   }
 }
