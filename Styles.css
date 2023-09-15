@@ -148,9 +148,18 @@ a.download-link:hover {
   }
   
   .Content {
+<<<<<<< HEAD
     position:relative;
+=======
+    position:unset;
+>>>>>>> 58f0d2387f34b004141280de446db56dd0834202
     width: 100%;
+    
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 58f0d2387f34b004141280de446db56dd0834202
   .Profile{
     flex-direction: column;
   }
@@ -158,5 +167,8 @@ a.download-link:hover {
   .Name{
     text-align: center;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 58f0d2387f34b004141280de446db56dd0834202
 }
